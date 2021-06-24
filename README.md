@@ -23,3 +23,9 @@
     ```
      $ python manage.py runserver
     ```
+3. API endpoints:
+    * list all the coupons available in database:
+
+    ```
+     $ http://127.0.0.1:8000/api/v1
+    ```
