@@ -25,6 +25,34 @@
     ```
 3. API endpoints:
     * list all the coupons available in database:
+    
+    ```
+    Example:
+    
+    [
+    {
+        "code": "123",
+        "discount": 20,
+        "active": true
+    },
+    {
+        "code": "CODEx1",
+        "discount": 25,
+        "active": true
+    },
+    {
+        "code": "CODE-XYZ",
+        "discount": 40,
+        "active": true
+    },
+    {
+        "code": "X89",
+        "discount": 70,
+        "active": true
+    }
+]
+    ```
+    
 
     ```
      $ http://127.0.0.1:8000/api/v1
