@@ -8,6 +8,7 @@ class CodeSerializer(serializers.Serializer):
     """
     Serializing of model Code.
     """
+    id = serializers.IntegerField()
     code = serializers.CharField()
     discount = serializers.IntegerField(default=15)
     active = serializers.BooleanField(default=True)
