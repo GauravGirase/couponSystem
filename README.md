@@ -1,4 +1,4 @@
-# Revedy-Web
+# COUPON SYSYTEM
 
 
 ### Prerequisite:
@@ -14,7 +14,6 @@
         ```
         $ pip install -r requirements.txt
         ```
-     * Rename of .env(dev) to .env and update all variables values in .env
       
      * DB migrations:
         ```
