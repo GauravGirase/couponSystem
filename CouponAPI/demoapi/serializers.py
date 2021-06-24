@@ -1,17 +1,21 @@
+from django.db.models.base import Model
 from rest_framework import serializers
 
 from .models import Code
 from CouponAPI.constants import VALIDATION
 
 
-class CodeSerializer(serializers.Serializer):
+class CodeSerializer(serializers.ModelSerializer):
     """
     Serializing of model Code.
     """
-    id = serializers.IntegerField()
-    code = serializers.CharField()
-    discount = serializers.IntegerField(default=15)
-    active = serializers.BooleanField(default=True)
+    class Meta:
+        model = Code
+        fields = '__all__'
+    # id = serializers.IntegerField()
+    # code = serializers.CharField()
+    # discount = serializers.IntegerField(default=15)
+    # active = serializers.BooleanField(default=True)
 
     def validate(self, data):
         """
