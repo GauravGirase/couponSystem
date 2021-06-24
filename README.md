@@ -29,3 +29,14 @@
     ```
      $ http://127.0.0.1:8000/api/v1
     ```
+    * To get details or delete particular coupons available in database:
+
+    ```
+     $ http://127.0.0.1:8000/api/v1/codes/<id>
+
+    ```
+    * To redeem the coupon , the user needs to pass coupon code as query parameter:
+
+    ```
+     $ http://127.0.0.1:8000/api/v1/codes/<coupon_data>
+    ```
