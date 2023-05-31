@@ -13,6 +13,10 @@ pipeline {
               def curl_response = sh (returnStdout: true, script: "curl -s ${url}")
 
               println "curl_response: " + curl_response
+            
+            if(env.CHANGE_ID){
+                  println "Pull request ID: " + pullRequest.id
+            }
           }
         }         
       }
