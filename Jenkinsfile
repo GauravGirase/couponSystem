@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages{
-      stage("Hello"){
-          println "Hello World"      
+      stage ("Hello"){
+        steps{
+          println "Hello World"
+        }         
       }
   }
-
 }
