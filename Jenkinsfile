@@ -6,6 +6,7 @@ pipeline {
           println "Branch Name: " + env.BRANCH_NAME
           println "Change ID: " + env.CHANGE_ID
           println "GITHUB_PAYLOAD: " + env.GITHUB_PAYLOAD
+          println "Pull request: " + pullRequest
           println "Hello World"
         }         
       }
