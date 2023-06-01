@@ -15,7 +15,7 @@ pipeline {
               println "curl_response: " + curl_response
             
             if(env.CHANGE_ID){
-                  println "Pull request ID: " + pullRequest.id
+                  println "Pull CHANGE_ID : " +  env.CHANGE_ID
             }
           }
         }         
