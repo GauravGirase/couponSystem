@@ -8,14 +8,12 @@ pipeline {
               println "Change ID: " + env.CHANGE_ID
               println "GITHUB_PAYLOAD: " + env.GITHUB_PAYLOAD
               println "Hello World2"
-              def url = "https://api.github.com/repos/GauravGirase/couponSystem/pulls/5"
+         
+            if(env.CHANGE_ID){
+               def url = "https://api.github.com/repos/GauravGirase/couponSystem/pulls/${env.CHANGE_ID}"
 //               def head_sha = sh (returnStdout: true, script: "curl -s ${url} | jq -r .head.sha").trim()
               def curl_response = sh (returnStdout: true, script: "curl -s ${url}")
-
               println "curl_response: " + curl_response
-            
-            if(env.CHANGE_ID){
-                  println "Pull CHANGE_ID : " +  env.CHANGE_ID
             }
           }
         }         
